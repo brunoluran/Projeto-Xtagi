@@ -1,8 +1,9 @@
-import styled from 'styled-components';
-import Rocketseat from './assets/GridPhotos/Rocketseat.jpg';
-import BaltaIo from './assets/GridPhotos/Balta.png';
-import Alura from './assets/GridPhotos/Alura.png';
-import Udemy from './assets/GridPhotos/Udemy.png';
+import styled from "styled-components";
+import Rocketseat from "./assets/GridPhotos/Rocketseat.png";
+import BaltaIo from "./assets/GridPhotos/Balta.png";
+import Alura from "./assets/GridPhotos/Alura.png";
+import Udemy from "./assets/GridPhotos/Udemy.png";
+import Trybe from "./assets/GridPhotos/Trybe.png";
 
 const Section = styled.div`
   height: 550px;
@@ -14,21 +15,32 @@ const Section = styled.div`
 
 const TextSection = styled.p`
   max-width: 500px;
-  font-size: 40px;
+  font-size: 32px;
   background-image: linear-gradient(120deg, #cbaa00, #d4af37, #cdb53b);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 `;
 
+const TextLink = styled.a`
+  margin-top: 10px;
+  display: block;
+  font-size: 16px;
+  &:hover {
+    border-bottom: 1px solid #d4af37;
+    width: 80px;
+  }
+`;
+
 const GridArea = styled.div`
   display: grid;
   grid-template-columns: repeat(3, 180px);
+  grid-template-rows: repeat(3, 100px);
   gap: 10px;
 `;
 
 const GridElement = styled.div`
-  background: linear-gradient(to top, #444, #888);
+  background: linear-gradient(120deg, #444, #888);
   padding: 20px;
   font-size: 20px;
   border-radius: 10px;
@@ -40,18 +52,6 @@ const GridElement = styled.div`
 const GridImg = styled.img`
   width: 100px;
   margin-top: 0;
-`;
-
-const Btn = styled.div`
-  display: block;
-  width: 100px;
-  margin-left: 230px;
-  margin-top: 40px;
-  border: 0;
-  background-color: #d4af37;
-  color: #000;
-  border-radius: 10px;
-  padding: 2px;
 `;
 
 export const BenefitsSection = () => {
@@ -71,7 +71,7 @@ export const BenefitsSection = () => {
           <GridImg src={Udemy} />
         </GridElement>
         <GridElement>
-          <GridImg src={Rocketseat} />
+          <GridImg src={Trybe} />
         </GridElement>
         <GridElement>
           <GridImg src={BaltaIo} />
@@ -87,10 +87,10 @@ export const BenefitsSection = () => {
         </GridElement>
       </GridArea>
       <TextSection>
-        Tenha acesso ao BeneXtagi, um programa repleto de benefícios para você estagiário.
-        <a href='' style={{ fontSize: '16px', display: 'block' }}>
+        Tenha acesso ao BeneX, um programa repleto de benefícios para você estagiário.
+        <TextLink href="https://www.google.com.br" target="_blank">
           Saiba mais
-        </a>
+        </TextLink>
       </TextSection>
     </Section>
   );

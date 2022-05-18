@@ -1,5 +1,7 @@
-import styled from 'styled-components';
-import CardImg from './assets/CardImg.png';
+import styled from "styled-components";
+import AppStore from "./assets/Images/AppStore.png";
+import GoogleStore from "./assets/Images/GoogleStore.png";
+import CardImg from "./assets/Images/CardImg.png";
 
 const Section = styled.div`
   height: 550px;
@@ -10,8 +12,9 @@ const Section = styled.div`
 `;
 
 const TextSection = styled.p`
+  display: flex;
   max-width: 500px;
-  font-size: 40px;
+  font-size: 35px;
   background-image: linear-gradient(120deg, #cbaa00, #d4af37, #cdb53b);
   background-clip: text;
   -webkit-background-clip: text;
@@ -27,13 +30,8 @@ export const AppSection = () => {
   return (
     <>
       <Section>
-        <TextSection>
-          Torne-se Xtagier e faça parte da maior rede de estagíários do Brasil.
-          <a href='' style={{ fontSize: '16px', display: 'block' }}>
-            Saiba mais
-          </a>
-        </TextSection>
-        <ImgSection src={CardImg} alt='' />
+        <TextSection>Baixe o App</TextSection>
+        <ImgSection src={CardImg} alt="" />
       </Section>
     </>
   );
