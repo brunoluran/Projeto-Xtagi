@@ -1,13 +1,9 @@
-import { Header } from "./MainPage/Header";
-import { MainSection } from "./MainPage/MainSection";
-import { Sections } from "./MainPage/Sections";
+import { FirstPage } from './MainPage/Firstpage';
 
 export const App = () => {
   return (
     <>
-      <Header />
-      <MainSection />
-      <Sections />
+      <FirstPage />
     </>
   );
 };
