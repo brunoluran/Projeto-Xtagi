@@ -4,6 +4,10 @@ import BaltaIo from "./assets/GridPhotos/Balta.png";
 import Alura from "./assets/GridPhotos/Alura.png";
 import Udemy from "./assets/GridPhotos/Udemy.png";
 import Trybe from "./assets/GridPhotos/Trybe.png";
+import OpenEnglish from "./assets/GridPhotos/OpenEnglish.png";
+import WiseUp from "./assets/GridPhotos/WiseUp.png";
+import CubosAcademy from "./assets/GridPhotos/CubosAcademy.png";
+import GamaAcademy from "./assets/GridPhotos/GamaAcademy.png";
 
 const Section = styled.div`
   height: 550px;
@@ -74,16 +78,16 @@ export const BenefitsSection = () => {
           <GridImg src={Trybe} />
         </GridElement>
         <GridElement>
-          <GridImg src={BaltaIo} />
+          <GridImg src={OpenEnglish} />
         </GridElement>
         <GridElement>
-          <GridImg src={Alura} />
+          <GridImg src={WiseUp} />
         </GridElement>
         <GridElement>
-          <GridImg src={Udemy} />
+          <GridImg src={CubosAcademy} />
         </GridElement>
         <GridElement>
-          <GridImg src={Rocketseat} />
+          <GridImg src={GamaAcademy} />
         </GridElement>
       </GridArea>
       <TextSection>
