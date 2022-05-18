@@ -60,7 +60,7 @@ const GridImg = styled.img`
 
 export const BenefitsSection = () => {
   return (
-    <Section>
+    <Section id="BeneSection">
       <GridArea>
         <GridElement>
           <GridImg src={Rocketseat} />

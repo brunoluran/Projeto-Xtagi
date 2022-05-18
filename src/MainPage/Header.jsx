@@ -1,12 +1,11 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
-import LogoXtagi from "./assets/Images/logo-Xtagi.png";
+import LogoXtagi from "./assets/Images/logoWeb.png";
 
 const HeaderContainer = styled.div`
   width: 100%;
   height: 10vh;
   background: linear-gradient(120deg, #222, #666);
-  //background-color: transparent;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -22,8 +21,8 @@ const HeaderLogoImg = styled.img`
 const NavItems = styled.nav`
   padding: 5px 10px;
 
-  .signInBtn,
-  .signUpBtn {
+  .signIn,
+  .signUp {
     background-color: #d4af37;
     color: #000;
     border-radius: 5px;
@@ -38,14 +37,12 @@ const NavItems = styled.nav`
   }
 `;
 
-const NavButton = styled.button`
-  width: 120px;
-  height: 30px;
-  margin-left: 5px;
+const NavAncora = styled.a`
+  padding: 5px 10px;
+  margin: 0 5px;
   background-color: transparent;
-  border: none;
+  text-decoration: none;
   color: #d4af37;
-  font-size: 16px;
   border-radius: 5px;
 
   &:hover {
@@ -58,12 +55,12 @@ export const Header = () => {
     <HeaderContainer>
       <HeaderLogoImg src={LogoXtagi} alt="Logo da Xtagi Bank" />
       <NavItems>
-        <NavButton>Home</NavButton>
-        <NavButton>Sobre</NavButton>
-        <NavButton>Benefícios</NavButton>
-        <NavButton>Aplicativo</NavButton>
-        <NavButton className="signInBtn">Acesse</NavButton>
-        <NavButton className="signUpBtn">Criar Conta</NavButton>
+        <NavAncora href="#MainSection">Home</NavAncora>
+        <NavAncora href="#AboutSection">Sobre</NavAncora>
+        <NavAncora href="#BeneSection">Benefícios</NavAncora>
+        <NavAncora href="#AppSection">Aplicativo</NavAncora>
+        <NavAncora className="signIn">Acesse</NavAncora>
+        <NavAncora className="signUp">Criar conta</NavAncora>
       </NavItems>
     </HeaderContainer>
   );

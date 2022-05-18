@@ -28,11 +28,9 @@ const ImgSection = styled.img`
 
 export const AppSection = () => {
   return (
-    <>
-      <Section>
-        <TextSection>Baixe o App</TextSection>
-        <ImgSection src={CardImg} alt="" />
-      </Section>
-    </>
+    <Section id="AppSection">
+      <TextSection>Baixe o App</TextSection>
+      <ImgSection src={CardImg} alt="" />
+    </Section>
   );
 };

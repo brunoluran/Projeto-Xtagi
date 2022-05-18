@@ -35,22 +35,20 @@ const ImgSection = styled.img`
 
 export const AboutSection = () => {
   return (
-    <>
-      <Section>
-        <TextSection>
-          Somos a maior instituição financeira da América exclusiva para estagiários.
-          <ol style={{ listStyleType: "circle", color: "#d4af37" }}>
-            <li style={{ fontSize: "20px" }}>Zero anuidade.</li>
-            <li style={{ fontSize: "20px" }}>Milhares de benefícios.</li>
-            <li style={{ fontSize: "20px" }}>Conta digital.</li>
-            <li style={{ fontSize: "20px" }}>Cartão de Crédito.</li>
-          </ol>
-          <TextLink href="https://www.google.com.br" target="_blank">
-            Saiba mais
-          </TextLink>
-        </TextSection>
-        <ImgSection src={CardImg} alt="" />
-      </Section>
-    </>
+    <Section id="AboutSection">
+      <TextSection>
+        Somos a maior instituição financeira da América exclusiva para estagiários.
+        <ol style={{ listStyleType: "circle", color: "#d4af37" }}>
+          <li style={{ fontSize: "20px" }}>Zero anuidade.</li>
+          <li style={{ fontSize: "20px" }}>Milhares de benefícios.</li>
+          <li style={{ fontSize: "20px" }}>Conta digital.</li>
+          <li style={{ fontSize: "20px" }}>Cartão de Crédito.</li>
+        </ol>
+        <TextLink href="https://www.google.com.br" target="_blank">
+          Saiba mais
+        </TextLink>
+      </TextSection>
+      <ImgSection src={CardImg} alt="" />
+    </Section>
   );
 };

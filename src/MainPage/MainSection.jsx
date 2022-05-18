@@ -29,15 +29,37 @@ const TextLink = styled.a`
   }
 `;
 
+const HelpButton = styled.a`
+  position: fixed;
+  width: 150px;
+  height: 40px;
+  bottom: 40px;
+  right: 20px;
+  background-color: #d4af37;
+  color: #000;
+  border-radius: 50px;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+
+  &:hover {
+    width: 160px;
+    transition: all 0.5s ease-in-out;
+  }
+`;
+
 export const MainSection = () => {
   return (
-    <AreaMainSection>
+    <AreaMainSection id="MainSection">
       <TextMainSection>
         Torne-se Xtagier e faça parte da maior rede de estagíários do Brasil.
         <TextLink href="https://www.google.com.br" target="_blank">
           Saiba mais
         </TextLink>
       </TextMainSection>
+      <HelpButton href="https://google.com.br">Precisa de ajuda?</HelpButton>
     </AreaMainSection>
   );
 };
