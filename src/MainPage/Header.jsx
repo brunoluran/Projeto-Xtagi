@@ -3,8 +3,8 @@ import { Link } from "react-router-dom";
 import LogoXtagi from "./assets/Images/logoWeb.png";
 
 const HeaderContainer = styled.div`
-  width: 100%;
-  height: 10vh;
+  width: 100vw;
+  height: 8vh;
   background: linear-gradient(120deg, #222, #666);
   display: flex;
   justify-content: space-between;
@@ -19,7 +19,7 @@ const HeaderLogoImg = styled.img`
 `;
 
 const NavItems = styled.nav`
-  padding: 5px 10px;
+  padding: 0 25px;
 
   .signIn,
   .signUp {
@@ -35,6 +35,14 @@ const NavItems = styled.nav`
       transition: all ease 0.4s;
     }
   }
+  @media (max-width: 425px) {
+    padding: 0;
+    //display: none;
+  }
+
+  @media (max-width: 425px) {
+    display: none;
+  }
 `;
 
 const NavAncora = styled.a`
@@ -47,6 +55,11 @@ const NavAncora = styled.a`
 
   &:hover {
     border-bottom: 1px solid #d4af37;
+  }
+
+  @media (max-width: 425px) {
+    padding: 2px;
+    font-size: 12px;
   }
 `;
 

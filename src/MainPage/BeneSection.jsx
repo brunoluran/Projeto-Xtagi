@@ -11,10 +11,19 @@ import GamaAcademy from "./assets/GridPhotos/GamaAcademy.png";
 
 const Section = styled.div`
   height: 550px;
+  width: auto;
   background: linear-gradient(120deg, #222, #666);
   display: flex;
   justify-content: space-around;
   align-items: center;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
+
+  @media (max-width: 425px) {
+    padding: 0 20px;
+  }
 `;
 
 const TextSection = styled.p`
@@ -24,6 +33,14 @@ const TextSection = styled.p`
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+
+  @media (max-width: 1024px) {
+    font-size: 25px;
+  }
+
+  @media (max-width: 768px) {
+    font-size: 20px;
+  }
 `;
 
 const TextLink = styled.a`
@@ -34,6 +51,9 @@ const TextLink = styled.a`
     border-bottom: 1px solid #d4af37;
     width: 80px;
   }
+  @media (max-width: 320px) {
+    display: none;
+  }
 `;
 
 const GridArea = styled.div`
@@ -41,6 +61,18 @@ const GridArea = styled.div`
   grid-template-columns: repeat(3, 180px);
   grid-template-rows: repeat(3, 100px);
   gap: 10px;
+
+  @media (max-width: 1024px) {
+    grid-template-columns: repeat(3, 150px);
+  }
+
+  @media (max-width: 768px) {
+    grid-template-columns: repeat(3, 100px);
+  }
+
+  @media (max-width: 320px) {
+    gap: 5px;
+  }
 `;
 
 const GridElement = styled.div`
